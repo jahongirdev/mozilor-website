@@ -1,7 +1,7 @@
 ### Mozilor Website Template
 - Website
 
-[**Live Preview**]()
+[**Live Preview**](https://mozilor.netlify.app/)
 
 **Screenshot:**
 
