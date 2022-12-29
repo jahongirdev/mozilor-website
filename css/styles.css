@@ -4,11 +4,11 @@
 }
 
 :root {
-  --white: #FFFFFF;
+  --white: #ffffff;
   --black: #000000;
-  --text-color: #1A2578;
-  --text-color-second: #484C63;
-  --btn-color: #BF0830;
+  --text-color: #1a2578;
+  --text-color-second: #484c63;
+  --btn-color: #bf0830;
 }
 
 /* GENERAL */
@@ -36,7 +36,6 @@ body {
   line-height: 27px;
 }
 
-
 img {
   max-width: 100%;
   height: auto;
@@ -59,7 +58,7 @@ a {
 
 /* CONTAINER */
 .container {
-  max-width: 1170px;
+  max-width: 1180px;
   padding-left: 30px;
   padding-right: 30px;
   margin-left: auto;
@@ -68,7 +67,11 @@ a {
 
 .header {
   padding: 24px 0px;
-  background: linear-gradient(252.91deg, #E3E7F6 3.68%, rgba(227, 231, 246, 0) 97.82%);
+  background: linear-gradient(
+    252.91deg,
+    #e3e7f6 3.68%,
+    rgba(227, 231, 246, 0) 97.82%
+  );
 }
 
 .header .navbar {
@@ -114,12 +117,12 @@ a {
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-  color: #646A89;
+  color: #646a89;
   transition: all 0.3s ease;
 }
 
 .navbar .sitemenu .sitemenu-item .sitemenu-link:hover {
-  color: #BF0830;
+  color: #bf0830;
 }
 
 .navbar .sitemenu .sitemenu-item .sitemenu-link:active,
@@ -128,8 +131,8 @@ a {
 }
 
 .navbar .sitemenu .sitemenu-btn {
-  background-color: #BF0830;
-  border: 1px solid #BF0830;
+  background-color: #bf0830;
+  border: 1px solid #bf0830;
   border-radius: 6px;
   color: var(--white);
   padding: 13px 31px;
@@ -139,7 +142,7 @@ a {
 
 .navbar .sitemenu .sitemenu-btn:hover {
   background-color: transparent;
-  color: #BF0830;
+  color: #bf0830;
 }
 
 .navbar .sitemenu .sitemenu-btn:active,
@@ -167,11 +170,11 @@ a {
 }
 
 .navbar .mobile-menu-box .mobile-menu-icon:hover i.fa {
-  color: #BF0830;
+  color: #bf0830;
 }
 
 .navbar .mobile-menu-box .mobile-menu-icon:active i.fa {
-  color: #BF0830;
+  color: #bf0830;
   opacity: 0.7;
 }
 
@@ -211,7 +214,7 @@ a {
 
 .overlay a:hover,
 .overlay a:focus {
-  color: #BF0830;
+  color: #bf0830;
 }
 
 .overlay .closebtn {
@@ -223,7 +226,11 @@ a {
 
 .hero {
   padding-top: 97px;
-  background: linear-gradient(275deg, #E3E7F6 3.68%, rgba(227, 231, 246, 0) 97.82%);
+  background: linear-gradient(
+    275deg,
+    #e3e7f6 3.68%,
+    rgba(227, 231, 246, 0) 97.82%
+  );
 }
 
 .site-hero {
@@ -386,8 +393,9 @@ a {
 }
 
 .products-box-bottom-child {
-  background: #FFFFFF;
-  box-shadow: 0px 0px 8px rgba(22, 23, 72, 0.07), 0px 25px 35px rgba(22, 23, 72, 0.08);
+  background: #ffffff;
+  box-shadow: 0px 0px 8px rgba(22, 23, 72, 0.07),
+    0px 25px 35px rgba(22, 23, 72, 0.08);
   border-radius: 8px;
   transition: all 0.3s ease;
 }
@@ -453,7 +461,11 @@ a {
 }
 
 .award-win {
-  background: linear-gradient(268.52deg, #E3E7F6 -52.27%, rgba(227, 231, 246, 0) 138.23%);
+  background: linear-gradient(
+    268.52deg,
+    #e3e7f6 -52.27%,
+    rgba(227, 231, 246, 0) 138.23%
+  );
   padding: 100px 0px;
 }
 
@@ -484,10 +496,62 @@ a {
   margin-bottom: 0;
 }
 
+.leaders {
+  padding: 120px 0px;
+}
 
+.leaders-box-top {
+  text-align: center;
+}
 
+.leaders-box-top-heading {
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 57px;
+  color: var(--text-color);
+  margin-top: 0;
+  margin-bottom: 16px;
+}
 
+.leaders-box-top-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  color: var(--text-color-second);
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
+.leaders-box-bottom {
+  margin-top: 100px;
+}
+
+.myslider {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#prevBtn,
+#nextBtn {
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #424b5a;
+}
+
+#prevBtn:hover,
+#nextBtn:hover {
+  opacity: 0.7;
+}
+#prevBtn:active,
+#nextBtn:active {
+  opacity: 0.5;
+}
+
+/* RESPONSIVE */
 
 @media only screen and (max-width: 1000px) {
   .site-hero {
@@ -559,9 +623,11 @@ a {
   }
 }
 
-@media only screen and (max-width: 700px) {}
+@media only screen and (max-width: 700px) {
+}
 
-@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 600px) {
+}
 
 @media only screen and (max-width: 500px) {
   .award-content-heading {
@@ -575,7 +641,7 @@ a {
 
 @media screen and (max-height: 450px) {
   .overlay a {
-    font-size: 20px
+    font-size: 20px;
   }
 
   .overlay .closebtn {
@@ -585,4 +651,5 @@ a {
   }
 }
 
-@media only screen and (max-width: 400px) {}
+@media only screen and (max-width: 400px) {
+}
