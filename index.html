@@ -17,33 +17,152 @@
   <!-- Stylesheets, CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
   <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/resets.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-
-  <header class="header">
+  <!-- HEADER -->
+  <header class="header" role="header">
     <div class="container">
-      <nav class="navbar">
+      <nav class="navbar" role="navigation">
         <a class="navbar-logo" href="#">
           <img src="img/logo.svg" alt="Site Logo: Mozilor">
         </a>
-        <ul class="sitemenu">
+        <ul class="sitemenu" role="menu">
           <li class="sitemenu-item"><a class="sitemenu-link" href="#">Products</a></li>
           <li class="sitemenu-item"><a class="sitemenu-link" href="#">About us</a></li>
           <li class="sitemenu-item"><a class="sitemenu-link" href="#">Contact</a></li>
           <li class="sitemenu-item"><a class="sitemenu-btn" href="#">We're hiring</a></li>
         </ul>
         <div class="mobile-menu-box">
-          <button class="mobile-menu-icon">
+          <button class="mobile-menu-icon" onclick="openNav()">
             <i class="fa fa-bars"></i>
           </button>
         </div>
       </nav>
     </div>
   </header>
+  <!-- FULL SCREEN NAVBAR -->
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="#">Products</a>
+      <a href="#">About us</a>
+      <a href="#">Contact</a>
+      <a href="#">We're hiring</a>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <div class="site-hero">
+        <div class="site-hero-content">
+          <h1 class="site-hero-content-heading">We build products to simplify work for businesses</h1>
+          <p class="site-hero-content-text">Our next-gen products empower businesses to implement agility and
+            accelerate growth.</p>
+          <div class="site-hero-content-btn-box">
+            <a class="site-hero-content-btn first-btn" href="#">Learn more</a>
+            <a class="site-hero-content-btn second-btn" href="#">Work with us</a>
+          </div>
+        </div>
+        <div class="site-hero-image">
+          <img class="site-hero-image-img" src="img/hero-img.png" alt="Hero Image Illustration">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN -->
+  <main class="main-content" role="main">
+    <!-- BRANDS -->
+    <section class="brands">
+      <div class="container">
+        <div class="brands-box">
+          <h2 class="brands-box-heading">Over <b>1.3 million</b> users and global brands trust us </h2>
+          <div class="brands-logo-box">
+            <div class="brand-logo">
+              <img src="img/brands/1.svg" alt="First Brand Logo: dekoria">
+            </div>
+            <div class="brand-logo">
+              <img src="img/brands/2.svg" alt="Second Brand Logo: DECATHLON">
+            </div>
+            <div class="brand-logo">
+              <img src="img/brands/3.svg" alt="Third Brand Logo: Domino's">
+            </div>
+            <div class="brand-logo">
+              <img src="img/brands/4.svg" alt="Fourth Brand Logo: HEINEKEN">
+            </div>
+            <div class="brand-logo">
+              <img src="img/brands/5.svg" alt="Fiveth Brand Logo: TOYOTA">
+            </div>
+            <div class="brand-logo">
+              <img src="img/brands/6.svg" alt="Sixth Brand Logo: RENAULT">
+            </div>
+            <div class="brand-logo">
+              <img src="img/brands/7.svg" alt="Seventh Brand Logo: KFC">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="divisor-line"></div>
+    <!-- PRODUCTS -->
+    <section class="products">
+      <div class="container">
+        <div class="products-box">
+          <div class="products-box-top">
+            <h2 class="products-box-top-heading">Our line of products</h2>
+            <p class="products-box-top-text">Here's what we're building to help businesses deliver amazing customer
+              experiences.</p>
+          </div>
+          <div class="products-box-bottom">
+            <div class="products-box-bottom-child">
+              <div class="products-box-bottom-child-content">
+                <img class="products-box-bottom-child-img" src="img/brands/8.svg"
+                  alt="Product Child Brand Logo: CookieYes">
+                <p class="products-box-bottom-child-text">Cookie consent solution for privacy compliance.</p>
+                <a class="products-box-bottom-child-btn" href="#"><i class="fa fa-arrow-right"></i> Learn More</a>
+              </div>
+              <div class="products-box-bottom-child-image">
+                <img src="img/product-img1.png" alt="Product Child Bottom Image">
+              </div>
+            </div>
+            <div class="products-box-bottom-child">
+              <div class="products-box-bottom-child-content">
+                <img class="products-box-bottom-child-img" src="img/brands/9.svg"
+                  alt="Product Child Brand Logo: webtoffee">
+                <p class="products-box-bottom-child-text">Plugins and extensions for eCommerce needs.</p>
+                <a class="products-box-bottom-child-btn" href="#"><i class="fa fa-arrow-right"></i> Learn More</a>
+              </div>
+              <div class="products-box-bottom-child-image">
+                <img src="img/product-img2.png" alt="Product Child Bottom Image">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- AWARD WIN -->
+    <section class="award-win">
+      <div class="container">
+        <div class="award">
+          <div class="award-content">
+            <h2 class="award-content-heading">Creators of award-winning products</h2>
+            <p class="award-content-text">Our products are loved by customers and recommended by leading industry
+              experts.</p>
+          </div>
+          <div class="award-image">
+            <img src="img/award-img.png" alt="Award Winning Image">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
 
+  <script src="js/mobile-nav.js"></script>
   <script src="js/main.js"></script>
 </body>
 
