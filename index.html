@@ -24,26 +24,29 @@
 
 <body>
   <!-- HEADER -->
-  <header class="header" role="header">
-    <div class="container">
-      <nav class="navbar" role="navigation">
-        <a class="navbar-logo" href="#">
-          <img src="img/logo.svg" alt="Site Logo: Mozilor">
-        </a>
-        <ul class="sitemenu" role="menu">
-          <li class="sitemenu-item"><a class="sitemenu-link" href="#">Products</a></li>
-          <li class="sitemenu-item"><a class="sitemenu-link" href="#">About us</a></li>
-          <li class="sitemenu-item"><a class="sitemenu-link" href="#">Contact</a></li>
-          <li class="sitemenu-item"><a class="sitemenu-btn" href="#">We're hiring</a></li>
-        </ul>
-        <div class="mobile-menu-box">
-          <button class="mobile-menu-icon" onclick="openNav()">
-            <i class="fa fa-bars"></i>
-          </button>
-        </div>
-      </nav>
-    </div>
-  </header>
+  <div class="fixed-top">
+    <header class="header" role="header">
+      <div class="container">
+        <nav class="navbar" role="navigation">
+          <a class="navbar-logo" href="#">
+            <img src="img/logo.svg" alt="Site Logo: Mozilor">
+          </a>
+          <ul class="sitemenu" role="menu">
+            <li class="sitemenu-item"><a class="sitemenu-link" href="#">Products</a></li>
+            <li class="sitemenu-item"><a class="sitemenu-link" href="#">About us</a></li>
+            <li class="sitemenu-item"><a class="sitemenu-link" href="#">Contact</a></li>
+            <li class="sitemenu-item"><a class="sitemenu-btn" href="#">We're hiring</a></li>
+          </ul>
+          <div class="mobile-menu-box">
+            <button class="mobile-menu-icon" onclick="openNav()">
+              <i class="fa fa-bars"></i>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+  </div>
+
   <!-- FULL SCREEN NAVBAR -->
   <div id="myNav" class="overlay">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -204,7 +207,7 @@
         </div>
       </div>
     </section>
-
+    <!-- JOIN -->
     <section class="join">
       <div class="container">
         <div class="join-box">
@@ -213,11 +216,59 @@
             <p class="join-box-content-text">Looking to achieve great things? You've come to the right place.</p>
             <a class="join-box-content-btn" href="#">Join the team</a>
           </div>
-          <div class="join-box-image"></div>
+          <div class="join-box-image">
+            <img src="img/join-img.svg" alt="Join Section Image: Illustrations">
+          </div>
         </div>
       </div>
     </section>
   </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-box">
+        <div class="footer-box-top">
+          <div class="footer-box-top-left">
+            <a href="#">
+              <img src="img/footer-logo.svg" alt="Footer Logo">
+            </a>
+            <p>Mozilor builds extensions, plugins and apps to simplify work for businesses. </p>
+          </div>
+          <div class="footer-box-top-right">
+            <ul class="footer-menu">
+              <li class="title">Products</li>
+              <li class="fritem"><a href="#">CookieYes</a></li>
+              <li class="fritem"><a href="#">Webtoffee</a></li>
+            </ul>
+            <ul class="footer-menu">
+              <li class="title">About</li>
+              <li class="fritem"><a href="#">About us</a></li>
+              <li class="fritem"><a href="#">Career</a></li>
+              <li class="fritem"><a href="#">Contact</a></li>
+            </ul>
+            <ul class="social-icons">
+              <li class="title">Follow us</li>
+              <li class="item">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-line"></div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="bottom">
+          <span>© 2022 Mozilor - All right reserved</span>
+          <a href="#">Terms & Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
   <script src="js/mobile-nav.js"></script>
